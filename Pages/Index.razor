@@ -1,0 +1,25 @@
+﻿@page "/"
+
+<PageTitle>Index</PageTitle>
+<HeadContent>
+
+</HeadContent>
+
+<h1>Hello, Tyson!</h1>
+
+Welcome to your new app.
+
+<SurveyPrompt Title="How is Blazor working for you?" />
+
+<Counter IncrementAmount="10"/>
+
+<ErrorBoundary>
+    <ChildContent>
+        <FetchData />
+    </ChildContent>
+    <ErrorContent>
+        <div class="alert alert-danger">
+            Oh no! The weather is broken today!
+        </div>
+    </ErrorContent>
+</ErrorBoundary>
